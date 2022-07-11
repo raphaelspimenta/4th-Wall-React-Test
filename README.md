@@ -1,6 +1,5 @@
 ## Setup
-1. Clone the repo after receiving access at the agreed-upon time
-2. From master, create a new branch using your first and last name as the branch name i.e. john-smith
+1. Create a fork and clone the repo
 2. Run `npm install` [npm](https://docs.npmjs.com/cli/install)
 3. Run `npm run json-server` [json-server](https://www.npmjs.com/package/json-server)
 4. In a separate terminal, Run `npm start` [Create React App](https://github.com/facebook/create-react-app) - (Should have two terminals running, 1 for the json server & 1 for the UI)
