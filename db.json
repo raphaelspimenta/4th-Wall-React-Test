@@ -1,0 +1,60 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Scarlett",
+      "lastName": "Brown",
+      "locationId": 1,
+      "phone": "702 456 1232"
+    },
+    {
+      "id": 2,
+      "firstName": "Charlize",
+      "lastName": "Theron",
+      "locationId": 2,
+      "phone": "801 777 1232"
+    },
+    {
+      "id": 3,
+      "firstName": "Jennifer",
+      "lastName": "Lawrence",
+      "locationId": 3,
+      "phone": "720 777 8888"
+    },
+    {
+      "id": 4,
+      "firstName": "Leonardo",
+      "lastName": "DiCaprio",
+      "locationId": 1,
+      "phone": "702 222 1232"
+    },
+    {
+      "id": 5,
+      "firstName": "Tom",
+      "lastName": "Hanks",
+      "locationId": 2,
+      "phone": "801 777 0987"
+    },
+    {
+      "id": 6,
+      "firstName": "Denzel",
+      "lastName": "Washington",
+      "locationId": 3,
+      "phone": "720 123 4567"
+    }
+  ],
+  "locations": [
+    {
+      "id": 1,
+      "name": "Las Vegas"
+    },
+    {
+      "id": 2,
+      "name": "Salt Lake City"
+    },
+    {
+      "id": 3,
+      "name": "Denver"
+    }
+  ]
+}
