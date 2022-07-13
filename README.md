@@ -53,3 +53,21 @@ As mentioned, I used redux and redux-saga to create a store. The idea was to use
 Each resource was initially thought as a CRUD. So the values ​​of each reducer have a `data` property that stores the data fetched from the API, and other properties for each of the crud operations, containing the current status of the operation and a property to inform if there are any errors.
 
 For the asynchronous flows, redux-saga was used, the most latent reason here for this is that these flows can be more easily tested separately and reused anywhere in the application.
+
+## Changes Needed
+### Design System and Components package
+Something I would very much like to do if I had more time is to create separated UI definitions from the application and agnostic to any library.
+
+The primary idea would be to create a Design System based on design-tokens. For this, a package would be created to provide the application's theme definitions, such as colors, typography, margins, screen sizes, etc.
+
+After that, we could create a project using, for example, the storybook to define the application's components. This project must use the theme definitions described in the design system created earlier.
+
+The main idea here is that we can share these definitions/components and if in the future we decide to change from Material UI to Bootstrap for example, we only need to make changes in the components level.
+
+### Better UI responsiveness
+
+Responsiveness has not yet been worked on as it should. For example, there are no screen size settings yet in this development. So this is a point that should be made later.
+
+### Internationalization
+
+It is not critical, but a good practice for any application is to use internationalization to present the content. For that we could use i18next.
