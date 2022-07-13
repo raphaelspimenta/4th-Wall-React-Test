@@ -24,6 +24,32 @@
   - Reliability
 3. UI/UX
 
-
-
 ## Changes Made
+### Core, Environment & API Configuration
+
+Thinking about development environments and general infrastructure configurations, I created a package called `core` with the responsibility of providing to the application access to API's, control of development environments and other similar utilities.
+The api url was defined in the .env file, them we can define this only once in the axios configuration.
+
+### Pages & Components folder
+
+To separate the components better, I created the folder `components` to keep the less controlled components like visualization components, layout stuff, loaders and etc. Also, I made the folder `pages` to keep the application pages containing the logic and its flow.
+
+### Application router
+
+Even though we initially have only one page, a router was configured in `/routes` to control the application's routes using Suspense and Lazy load. The components `components/DynamicRoute` and `components/ErrorBoundary` are used to make this work.
+
+### External Libraries
+
+To facilitate some development points I used the following libraries:
+
+* [Formik](https://formik.org/docs/overview) + [Yup](https://www.npmjs.com/package/yup) to help develop controlled forms with validation
+* [React router DOM](https://v5.reactrouter.com/web/guides/quick-start) to create the application routes
+* [Redux](https://redux.js.org/) + [Redux-Saga](https://redux-saga.js.org/) to create a unique store to keep the application data and deal with async flows.
+
+### Store
+
+As mentioned, I used redux and redux-saga to create a store. The idea was to use the concept of resources, for example, locations is a resource and we can access it in any part of the application with the method created `useResource` in `store/utils` that returns a specific part of the store.
+
+Each resource was initially thought as a CRUD. So the values ​​of each reducer have a `data` property that stores the data fetched from the API, and other properties for each of the crud operations, containing the current status of the operation and a property to inform if there are any errors.
+
+For the asynchronous flows, redux-saga was used, the most latent reason here for this is that these flows can be more easily tested separately and reused anywhere in the application.
