@@ -71,3 +71,12 @@ Responsiveness has not yet been worked on as it should. For example, there are n
 ### Internationalization
 
 It is not critical, but a good practice for any application is to use internationalization to present the content. For that we could use i18next.
+
+## Final Thoughts
+For me it was a really cool test to develop.
+
+The idea of ​​already having an application with some settings for axios, scss and Material UI, and from there work on adjustments and increments is very interesting.
+
+One of the challenges for me was to better understand how Material UI works with React, it's not a library I have a lot of experience with. But as I developed it, it became more intuitive.
+
+Other than that, everything went well. The purpose of the challenge was clear and I had a good time developing it.
