@@ -1,0 +1,13 @@
+.paper {
+    padding: 1.5rem;
+    display: flex;
+
+    .contact-info {
+        flex: 3;
+    }
+
+    .contact-actions {
+        flex: 1;
+        justify-content: flex-end;
+    }
+}
